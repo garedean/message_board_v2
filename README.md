@@ -15,9 +15,6 @@ Prerequisites: you will need Node.js and Ember installed in order to run this ap
 3. After the terminal finishes download dependencies from the above step, type "ember server" and hit "enter"
 4. In you browser, open up "localhost:4200"
 
-Boot up a local server by typing: 'python -m SimpleHTTPServer'
-When the server is up and running, open up your favorite web browser and navigate to 'http://localhost:8000/'
-
 ##Copyright and license
 
 Code and documentation copyright 2015 Garrett Olson. THE BOARD is released under the MIT license
