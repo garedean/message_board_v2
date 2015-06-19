@@ -4,8 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'message-board-v2',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
-    firebase: 'the-board-v2.firebaseIO.com/',
+    contentSecurityPolicy: { 'connect-src': "'self' wss://the-board-2.firebaseio.com" },
+    firebase: "https://the-board-2.firebaseio.com",
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -21,12 +21,12 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://the-board-2.firebaseio.com",
       'font-src': "'self'",
-      'connect-src': "'self'",
+      'connect-src': "'self' wss://the-board-2.firebaseio.com",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline'",
-      'frame-src': "'none'"
+      'frame-src': "'none' https://the-board-2.firebaseio.com"
     }
   };
 

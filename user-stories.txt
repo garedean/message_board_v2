@@ -1,0 +1,16 @@
+DONE -- All questions show on the main page with question and author name
+DONE -- User can add a question
+DONE -- User can edit a question
+DONE -- User can delete a question
+DONE - Question properties are question, author, and description.
+DONE -- User can click on a question to see all of the question properties.
+DONE -- Users can add responses/answers to a question and adding and viewing takes place on the 'question' page
+DONE -- Responses to a question show the date they were answered.
+
+
+
+Your code will be reviewed for the following objectives:
+
+Application uses mock data or Firebase successfully
+Routes and models are set up correctly
+Ember CLI application is working as expected

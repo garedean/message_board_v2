@@ -1,0 +1,177 @@
+.main-content {
+  * {
+      font-size: 1.05em;
+    };
+  span {
+    display: block;
+    text-align: center;
+  };
+}
+
+.container .row {
+  margin-top: 30px;
+}
+
+body {
+  padding-top: 90px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url('../images/plank.jpg') no-repeat;
+  overflow: auto;
+  color: white;
+  z-index: 9999;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-lg {
+  padding: 10px 90px;
+}
+
+.vertically-spaced-md {
+  margin: 20px 0;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.btn.centered {
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 a {
+  color: inherit;
+}
+
+header h1 a:hover,
+header h1 a:focus {
+  color: inherit;
+}
+
+.link-list {
+  -webkit-padding-start: 0px;
+  padding-start: 0px;
+}
+
+.link-list a:hover {
+  text-decoration: none;
+}
+
+.link-list li {
+  list-style-type: none;
+  padding: 20px 10px;
+}
+
+.link-list li {
+  border-top: 1px solid #ddd;
+}
+
+.link-list li:hover {
+  background: #fcfcfc;
+}
+
+.link-list a:last-child li {
+  border-bottom: 1px solid #ddd;
+}
+
+.outlined {
+  border: 1px solid #ddd;
+  padding: 20px 15px;
+}
+
+.move-down {
+  margin-top: 60px;
+}
+
+.ember-note {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  font-family: 'Dancing Script', cursive;
+  margin-right: 10px;
+}
+
+.linkify {
+  color: #337ab7;
+}
+
+.linkify:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#response-list {
+  -webkit-padding-start: 0px;
+  padding-start: 0px;
+  margin-bottom: 30px;
+}
+
+#response-list li {
+  position: relative;
+  list-style-type: none;
+  padding: 15px 5px;
+  border-top: 1px solid #ddd;
+  min-height: 40px;
+}
+
+#response-list li:last-child {
+  border-bottom: 1px solid #ddd;
+}
+
+#response-list .response-info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: .85em;
+  color: #666;
+}
+
+#response-list li p:first-child {
+  margin-bottom: 0px;
+}
+
+.btn.respond {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .main-content {
+    * {
+        font-size: 1em;
+      };
+    span {
+      display: inline-block;
+      text-align: initial;
+    };
+    .question {
+      width: 65%;
+    };
+
+  }
+}
