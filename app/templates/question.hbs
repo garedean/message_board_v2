@@ -1,0 +1,51 @@
+<div class="row move-down">
+  <div class="col-md-6 col-md-offset-3 outlined">
+
+    <p>Asked by {{model.author}}:</p>
+    <hr>
+
+    {{#if isEditing}}
+      <form>
+        <div class="form-group">
+          <label for="title">Question</label>
+          {{input value=model.text class="form-control"}}
+        </div>
+
+        <div class="form-group">
+          <label for="body">More information</label>
+          {{textarea value=model.description class="form-control" rows="15"}}
+        </div>
+
+        <button class="btn btn-primary" {{action 'save'}}>Save</button>
+      </form>
+    {{else}}
+
+      <p>{{model.text}}</p>
+      <p>{{model.description}}</p>
+
+      <span class="linkify" {{action 'edit'}}>Edit</span> |
+      <span class="linkify" {{action 'delete'}}>Delete</span>
+    {{/if}}
+
+    <p>{{#link-to 'responses/new' this class="btn btn-success respond"}}Respond to this question{{/link-to}}</p>
+
+    {{outlet}}
+
+    <h2>Responses</h2>
+
+    <ul id="response-list">
+      {{#each response in model.responses}}
+          <li>
+            <p>
+              {{response.text}}
+            </p>
+
+            <span class="response-info">
+              <!-- Answered by {{response.author}} on {{date-submitted response}} -->
+              Answered by {{response.author}} on {{response.date}}
+            </span>
+          </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
